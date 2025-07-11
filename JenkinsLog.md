@@ -77,7 +77,7 @@ while True:
 ## 注意事项
 
 - 轮询频率不应过高, 频繁请求会增加 Jenkins 主机压力, 或者日志量很大, 有十几万行, 应通过time.sleep()来减轻Jenkins 主机压力
-- 请求参数BUILD_NUMBER设置为LastBuild, 获得你最新的一个job build的日志
+- 请求参数BUILD_NUMBER设置为LastBuild, 获得你最新的一个job build的日志, 也可以填写具体的build号
 - 参数USERNAME在Jenkins的Status查看, 不是用户名! 是Jenkins User ID
 - 参数API_TOKEN在Jenkins的Security获得
 ![](token.png)
